@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #7d3a00;
+    height: 90vh;
+    width: 90vh;
+    background-image: url(images/wood.png);
+    background-repeat: repeat;
+}
+
+.cell {
+    border: 1px solid black;
+}
+
+.cell-white {
+    background-color: #aa662a76;
+}
+
+.checker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.checker .checker-inner {
+    height: 90%;
+    width: 90%;
+}
+
+.checker-white .checker-inner {
+    background-color: rgb(126, 10, 10);
+    border-radius: 50%;
+}
+
+.checker-black .checker-inner {
+    background-color: rgb(34, 1, 1);
+    border-radius: 50%;
+}
