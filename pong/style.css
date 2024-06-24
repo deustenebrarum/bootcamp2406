@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.pad {
+    position: absolute;
+    background-color: #fff;
+}
+
+.left-pad {
+    left: 0;
+}
+
+.right-pad {
+    right: 0;
+}
+
+.ball {
+    position: absolute;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.score {
+    position: absolute;
+    color: #ffffff88;
+    font-size: 30vh;
+    text-align: center;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+}
+
+.score-left {
+    left: 0;
+}
+
+.score-right {
+    right: 0;
+}
